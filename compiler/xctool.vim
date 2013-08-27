@@ -15,4 +15,8 @@ endif
 " xctool errors conform to Vim quickfix's default error format
 CompilerSet errorformat&
 
+" xctool prints console output verbatim, and NSLog timestamps get misparsed as
+" errors. Throw out any line that starts with an NSLog-style timestamp.
+CompilerSet errorformat^=%-G%\\d%\\d%\\d%\\d-%\\d%\\d-%\\d%\\d\ %\\d%\\d:%\\d%\\d:%\\d%\\d.%\\d%\\d%\\d\ %.%#
+
 CompilerSet makeprg=xctool\ -reporter\ plain
