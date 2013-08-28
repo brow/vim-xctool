@@ -23,6 +23,7 @@ vim-xctool
 Perform the following steps for each project you wish to build with xctool.
 
 1. Navigate to the project root and check that you can run xctool successfully.
+
         xctool \
           -project MyProject.xcodeproj \
           -scheme MyProject
