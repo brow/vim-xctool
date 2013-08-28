@@ -5,16 +5,16 @@ vim-xctool
 
 ## Installation
 
-1. Install [xctool] into your path.
+0. Install [xctool] into your path.
 
         brew install xctool
        
-2. Install **vim-xctool** as a Vim plugin. Assuming you're using [pathogen.vim]:
+1. Install **vim-xctool** as a Vim plugin. Assuming you're using [pathogen.vim]:
 
         cd ~/.vim/bundle
         git clone https://github.com/brow/vim-xctool.git
        
-3. *Optional:* Add the following to your `.vimrc` to ensure all Objective-C sources are treated as such.
+2. *Optional:* Add the following to your `.vimrc` to ensure all Objective-C sources are treated as such.
 
            au BufNewFile,BufRead *.h,*.m,*.pch set filetype=objc
 
@@ -22,8 +22,7 @@ vim-xctool
 
 Perform the following steps for each project you wish to build with xctool.
 
-1. Navigate to the project root and check that you can run xctool successfully. You'll need to supply the `-scheme` argument and either `-project` or `-workspace`.
-
+1. Navigate to the project root and check that you can run xctool successfully.
         xctool \
           -project MyProject.xcodeproj \
           -scheme MyProject
