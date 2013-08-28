@@ -32,10 +32,10 @@ Perform the following steps for each project you wish to build with xctool.
        
 2. Once you have arguments that work, put them into a file called `.xctool-args` with this format:
 
-	   [
-	     "-project", "MyProject.xcodeproj",
-	     "-scheme", "MyProject",
-	   ]
+        [
+          "-project", "MyProject.xcodeproj",
+          "-scheme", "MyProject",
+        ]
 
 ## Usage
 
