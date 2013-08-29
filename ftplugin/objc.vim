@@ -1,1 +1,1 @@
-au FileType objc compiler xctool
+compiler xctool
